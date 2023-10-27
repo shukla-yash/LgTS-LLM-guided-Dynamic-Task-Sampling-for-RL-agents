@@ -1,0 +1,29 @@
+experiment:
+  environment: 'fireman-easy'
+  TS_algorithm: 'AGTS' # Teacher-Student algorithm to be used
+  num_paths: 4 # LLM generates K paths in response
+  random_seed: 4000 
+  log_freq: 100 
+  max_train_timestep: 1e8
+  print_freq: 5000
+
+ppo:
+  update_episode : 5000      
+  num_epochs : 60           
+  eps_clip : 0.2       
+  gamma : 0.99     
+  lr_actor : 0.0003      
+  lr_critic : 0.0001      
+
+environment:
+  max_ep_len: 500 
+
+llm:
+  model: 'gpt-3.5-turbo'
+  prompt_file: '{path to LMgTS}/LMgTS/prompts/fireman_prompt.txt'
+  response_file: '{path to LMgTS}/LMgTS/responses/fireman_K=7.pkl' 
+  load_response: False 
+  api_key: 'API KEY'
+
+training:
+  episodes_in_each_iter: 500

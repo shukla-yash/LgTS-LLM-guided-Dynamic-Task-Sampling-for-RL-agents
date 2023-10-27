@@ -1,0 +1,10 @@
+Your goal is to reach 'Start' from 'Goal'.
+Give 4 distinct sequences of states from the start state to the goal state. A state is defined as a conjunction of ground predicates using the list of predicates below. The objects used for grounding must be selected from the list of objects.
+
+Start State: At(Start)
+Goal State: At(Goal)
+Objects: EasyKey, HardKey, Door, Goal, Lava, Start, Goal, Wall
+Predicates: At(?), PickedUp(?), Unlocked(?)
+
+Each sequence of states you produce should be a 1-D python list containing the predicates. The predicates should be in the format 'At(Objcet)'. 
+Each sequence in your response should be like: ['At(Start)', ... , ..., 'At(Goal)']. Do not generate any additional words or sentences. Your answer should be only the python lists. Do not describe the list.

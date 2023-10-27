@@ -1,0 +1,17 @@
+numpy
+torch
+openai
+sentence-transformers
+matplotlib
+gym
+Pillow
+keyboard
+matplotlib
+idna
+requests
+pyyaml
+gymnasium
+minigrid
+imageio 
+replicate 
+openai

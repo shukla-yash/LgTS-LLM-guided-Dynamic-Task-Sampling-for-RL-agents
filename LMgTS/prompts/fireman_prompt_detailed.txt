@@ -1,0 +1,17 @@
+You are a fireman and you want to save a survivor after securing the environment but a locked door is blocking your way to fire extinguisher. To open the door, you need to get the key. To extinguish the fire, you need to get a fire extinguisher. That is, you want to satisfy 'Saved(Survivor)' after 'Extinguished(Fire)'. You can only pick up one item at one time.
+
+Give 7 distinct sequences of states from the start state to the goal state.
+
+A state is defined as a conjunction of ground predicates using the list of predicates below. The objects used for grounding must be selected from the list of objects.
+
+Start State: At(Start)
+Goal State: Saved(Survivor) after Extinguished(Fire)
+Objects: Start, Key, Door, FireExtinguisher, Fire, Survivor
+Predicates: PickedUp(?), Unlocked(?), Extinguished(?), Saved(?)
+
+Each sequence of states you produce should be a python list. Each sequence in your response should be like: ['At(Start)', ..., 'Saved(Survivor)']. 
+
+Do not generate any additional words or sentences. The sequences must be distinct. Your answer should be only the python lists. Do not describe the lists. Do not group them into one list. Just reply with 
+'Sequence 1: [...] 
+
+Sequnece 2: [...]'
